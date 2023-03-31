@@ -1,0 +1,142 @@
+/* App Container */
+.app-container {
+  background-image: url("https://images.unsplash.com/photo-1534082486057-8a3a3b83f291");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* App Header */
+.app-header {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Arial Black", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #f44336;
+}
+
+/* Pokemon Card */
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  border: 1px solid black;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-card .image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pokemon-card .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pokemon-card .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.pokemon-card h2 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pokemon-card .type {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pokemon-card .weaknesses {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Filter Form */
+.form-control-group {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.form-control-group label {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-control-group input {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f44336;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control-group input:hover {
+  background-color: #fff;
+  color: #f44336;
+  cursor: pointer;
+}
+
+.form-control-group input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #f44336;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .pokemon-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-header {
+    font-size: 24px;
+  }
+
+  .form-control-group label {
+    font-size: 16px;
+  }
+
+  .form-control-group input {
+    font-size: 10px;
+  }
+}
