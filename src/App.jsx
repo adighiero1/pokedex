@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/header.jsx";
 import Pokemon from "./components/pokemon.jsx";
 import { filterPokemon, arrayStringToUpperCase } from "./util/functions.jsx";
-
+//
 function App() {
   const [pokemonListData, setPokemonListData] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
