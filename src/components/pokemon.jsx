@@ -42,10 +42,10 @@ const Pokemon = ({
     <div style={cardStyle}>
       <p className="thick-text">{`#${pokemonNum}`}</p>
       <img src={imgSrc} alt="Pokemon" className="cardImage" />
-      <p>
+      <div>
         <p className="thin-text">Name:</p>
         <p className="no-margins">{pokemonName}</p>
-      </p>
+      </div>
       <p className="thin-text">Types:</p>
       <div>
         {pokemonType.map((type, index) => {
