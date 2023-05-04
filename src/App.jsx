@@ -68,7 +68,7 @@ function App() {
                 name="filter-type"
                 id="filter-type"
                 value={typeFilter}
-                placeholder="Ex. Grass"
+                placeholder="Ex Type: Grass"
                 onChange={handleTypeFilterChange}
               />
               <label htmlFor="filter-weaknesses">Weaknesses:</label>
@@ -77,7 +77,7 @@ function App() {
                 name="filter-weaknesses"
                 id="filter-weaknesses"
                 value={weaknessFilter}
-                placeholder="Ex. Fire"
+                placeholder="Ex Weakness: Fire"
                 onChange={handleWeaknessFilterChange}
               />
             </form>
